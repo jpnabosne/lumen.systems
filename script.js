@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
             <nav>
                 <a href="index.html">Início</a>
                 <a href="#produtos">Equipamentos</a>
-                <a href="#contato" class="btn-portal">Portal do Cliente</a>
             </nav>
         </header>
     `;
