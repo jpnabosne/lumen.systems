@@ -1,30 +1,42 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    // Injetando o Header
+    // Código do Cabeçalho que se repetirá em todas as páginas
     const headerHTML = `
         <header>
-            <div class="logo">LUMEN <span>Medical Systems</span></div>
+            <div class="logo">LUMEN <span class="divider">|</span> <span class="sub">Medical Systems</span></div>
             <nav>
-                <a href="#inicio">Início</a>
-                <a href="#produtos">Simuladores</a>
-                <a href="#contato" class="nav-destaque">Portal do Cliente</a>
+                <a href="index.html">Início</a>
+                <a href="#produtos">Equipamentos</a>
+                <a href="#contato" class="btn-portal">Portal do Cliente</a>
             </nav>
         </header>
     `;
 
-    // Injetando o Footer
+    // Código do Rodapé que se repetirá em todas as páginas
     const footerHTML = `
         <footer>
-            <div class="footer-content">
-                <h3>Lumen - Medical Systems</h3>
-                <p>Tecnologia em Engenharia Clínica e Simulação Realística.</p>
-                <div class="footer-tag">Transformando a manutenção em <b>segurança para o paciente</b>.</div>
-                <div class="copyright">&copy; 2026 Lumen Systems - Todos os direitos reservados.</div>
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>LUMEN</h3>
+                    <p>Referência em simuladores para Engenharia Clínica.</p>
+                </div>
+                <div class="footer-cta">
+                    <p>Tecnologia que garante <b>precisão absoluta</b>.</p>
+                </div>
             </div>
+            <div class="copyright">&copy; 2026 Lumen Medical Systems - Padrão de Excelência Hospitalar</div>
         </footer>
     `;
 
-    // Coloca os conteúdos nos placeholders
-    document.getElementById('header-placeholder').innerHTML = headerHTML;
-    document.getElementById('footer-placeholder').innerHTML = footerHTML;
+    // Busca os espaços reservados no HTML e injeta o código
+    const headerContainer = document.getElementById('header-placeholder');
+    const footerContainer = document.getElementById('footer-placeholder');
+
+    if (headerContainer) {
+        headerContainer.innerHTML = headerHTML;
+    }
+
+    if (footerContainer) {
+        footerContainer.innerHTML = footerHTML;
+    }
 });
