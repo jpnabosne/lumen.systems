@@ -37,13 +37,6 @@ header {
 nav a { text-decoration: none; color: var(--azul-profundo); margin-left: 2rem; font-size: 0.9rem; transition: 0.3s; }
 nav a:hover { color: var(--dourado-tecnico); }
 
-.btn-portal { 
-    border: 1px solid var(--dourado-tecnico); 
-    padding: 8px 20px; 
-    border-radius: 2px; 
-    font-weight: 600; 
-}
-
 /* Hero Section */
 .hero { 
     padding: 120px 10%; 
